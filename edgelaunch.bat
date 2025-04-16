@@ -1,0 +1,6 @@
+@echo off
+echo Closing any existing Edge processes...
+taskkill /F /IM msedge.exe /T
+timeout /t 2
+echo Starting Edge with debugging port...
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --remote-debugging-port=9223 --no-first-run --user-data-dir="C:\Users\divijbajaj\AppData\Local\Microsoft\Edge\User Data" --profile-directory=Default
